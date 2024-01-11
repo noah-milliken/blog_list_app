@@ -4,6 +4,7 @@ const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
 const PORT = process.env.PORT
+
 const blogSchema = new mongoose.Schema({
   title: String,
   author: String,
@@ -15,7 +16,6 @@ const Blog = mongoose.model('Blog', blogSchema)
 
 const mongoUrl = process.env.
 MONGODB_URI
-
 
 mongoose.connect(mongoUrl)
 
@@ -31,6 +31,7 @@ app.get('/api/blogs', (request, response) => {
 })
 
 app.post('/api/blogs', (request, response) => {
+    console.log(request.body)
   const blog = new Blog(request.body)
 
   blog
