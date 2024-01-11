@@ -1,11 +1,10 @@
-POST http://localhost:3003/api/blogs 
-
-content-Type: application/json HTTP/1.1
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-Type: application/json 
 
 {
- "title": "Today i am a developer",
-  "author": "John Spielman",
-  "url": "www.bolgs.com",
-  "likes": 5
+ "title": "The Fat Man in space",
+  "author": "Greg Newmanson",
+  "url": "www.ObeseAtmosphere.com",
+  "likes": 50000
 }
 
