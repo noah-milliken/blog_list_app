@@ -1,5 +1,3 @@
-const { JsonWebTokenError } = require('jsonwebtoken')
-
 const errorHandler = (error, request, response, next) => {
 
 
