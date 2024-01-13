@@ -4,7 +4,7 @@ content-Type: application/json
 {
  "title": "The Fat Man in space",
   "author": "Greg Newmanson",
-  "url": "www.ObeseAtmosphere.com",
+  "url": "kittnes for mittens",
   "likes": 50000
 }
 

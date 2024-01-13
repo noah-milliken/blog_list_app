@@ -1,1 +1,26 @@
 GET http://localhost:3003/api/blogs HTTP/1.1
+###
+
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-Type: application/json 
+
+{
+ "title": "PLease let me be deleted",
+  "author": "i dont want to be here",
+  "url": "deleteme.com",
+  "likes": -3,
+  "userId": "65a2de899fe1f7f3b7c3d1b1"
+}
+###
+DELETE http://localhost:3003/api/blogs/65a1b37f85e6775f08e3519f
+
+###
+PUT http://localhost:3003/api/blogs/65a1ea218438e10d00bdb0ad HTTP/1.1
+Content-Type: application/json
+
+{
+ "title": "Please let me be deleted",
+  "author": "i dont want to be here",
+  "url": "deleteme.com",
+  "likes": 10
+}
